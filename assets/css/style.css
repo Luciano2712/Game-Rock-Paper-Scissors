@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:whitesmoke;
+    background-position: center;
+    text-align: center;  
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 5rem 0rem;
+    color: #311704;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 2rem 0rem;
+}
