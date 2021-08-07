@@ -1,3 +1,4 @@
+/* General Style for the whole document! */
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +7,11 @@
 }
 
 body {
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     background-position: center;
-    text-align: center;  
+    text-align: center;
 }
+
 ul {
     list-style: none;
 }
@@ -24,4 +26,18 @@ a {
 h1 {
     font-size: 2.5rem;
     padding: 2rem 0rem;
+}
+
+/* Styling the image for rules.html */
+#rules-image {
+    border: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#rules-image img {
+    width: 80%;
+    height: 80%;
+    margin: 10px;
+    padding: 10px;
 }
