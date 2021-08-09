@@ -48,3 +48,30 @@ h1 {
     margin: 10px;
     padding: 10px;
 }
+
+/* Styling header  */
+
+header {
+    border: 4px solid black;
+    margin: 4px;
+    padding: 4px;
+    background-color: #e4d7ce;
+    color: #311704;
+}
+
+header nav {
+    float: left;
+    border: 2px;
+    margin: 2px;
+    padding: 2px;
+}
+
+/* Styling footer  */
+
+footer {
+    border: 4px solid black;
+    margin: 4px;
+    padding: 4px;
+    background-color: #e4d7ce;
+    color: #311704;
+}
