@@ -74,4 +74,32 @@ footer {
     padding: 4px;
     background-color: #e4d7ce;
     color: #311704;
+    bottom: 0px;
+}
+
+/* Styling the match area  */
+
+section {
+    height: 100vh;
+    background-color: ;
+    font-family: sans-serif;
+}
+
+img {
+    height: 80px;
+    width: auto;
+}
+
+.score {
+    color: ;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score p {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
 }
