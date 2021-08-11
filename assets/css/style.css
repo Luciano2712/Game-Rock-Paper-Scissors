@@ -146,7 +146,6 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: opacity 0.5s ease 0.5s;
-
 }
 
 .winner {
@@ -257,16 +256,62 @@ div.fadeIn {
     }
 }
 
+/* Making responsive in portable devices using media queries  */
+
 /* For medium screen sizes from 750px wide and down */
 @media screen and (max-width:750px) {
     .winner {
         font-size: 20px;
     }
+
     img {
         height: 60px;
         width: auto;
     }
+
     .score h2 {
         font-size: 20px;
+    }
+
+    a {
+        font-size: 1rem;
+        padding: 5rem 0rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 0.5rem 0rem;
+    }
+
+    header {
+        border: 2px solid black;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    header nav {
+        border: 1px;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    footer {
+        border: 2px solid black;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    section {
+        height: 80vh;
+    }
+
+    .match button {
+        width: 100px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .match {
+        top: 50%;
     }
 }
