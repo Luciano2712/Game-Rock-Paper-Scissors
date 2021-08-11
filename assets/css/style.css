@@ -81,7 +81,7 @@ footer {
 
 section {
     height: 100vh;
-    background-color: ;
+    background-color: whitesmoke;
     font-family: sans-serif;
 }
 
@@ -89,7 +89,7 @@ img {
     height: 80px;
     width: auto;
 }
-
+/* Score section  */
 .score {
     color: #311704;
     height: 20vh;
@@ -98,16 +98,18 @@ img {
     align-items: center;
 }
 
+.score h2 {
+    font-size: 30px;
+}
+
 .score p {
     text-align: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
-
-/* Styling intro section  */
+/* Introduction to the game section  */
 .intro {
-    color: #e4d7ce;
-    background: #311704;
+    color: #311704;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -121,27 +123,28 @@ img {
 }
 
 .intro button,
-.options button {
+.match button {
     width: 120px;
     height: 50px;
+    background: none;
     border: 1px solid #311704;
     color: #311704;
-    background: #e4d7ce;
     font-size: 20px;
+    background: #e4d7ce;
     border-radius: 3px;
     cursor: pointer;
 }
-
 /* Style for the match area  */
 .match {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: opacity o.5s ease 0.5s;
+    transition: opacity 0.5s ease 0.5s;
 }
 
 .winner {
+    color: #311704;
     text-align: center;
     font-size: 50px;
 }
@@ -152,12 +155,12 @@ img {
     justify-content: space-around;
     align-items: center;
 }
-
+/* Rotating computer hand to be facing each other  */
 .computer-hand {
     transform: rotateY(180deg);
 }
-
-div.fadeout {
+/* Fading In and Out Otpions  */
+div.fadeOut {
     opacity: 0;
     pointer-events: none;
 }
