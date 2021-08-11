@@ -19,7 +19,6 @@ ul {
 a {
     text-decoration: none;
     font-size: 2rem;
-    padding: 5rem 0rem;
     color: #311704;
 }
 
@@ -57,13 +56,6 @@ header {
     padding: 4px;
     background-color: #e4d7ce;
     color: #311704;
-}
-
-header nav {
-    float: left;
-    border: 2px;
-    margin: 2px;
-    padding: 2px;
 }
 
 /* Styling footer  */
@@ -285,12 +277,6 @@ div.fadeIn {
 
     header {
         border: 2px solid black;
-        margin: 2px;
-        padding: 2px;
-    }
-
-    header nav {
-        border: 1px;
         margin: 2px;
         padding: 2px;
     }
