@@ -157,6 +157,9 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 5px;
+    padding: 5px;
+
 }
 
 /* Rotating computer hand to be facing each other  */
