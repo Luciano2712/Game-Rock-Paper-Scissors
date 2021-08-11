@@ -97,6 +97,8 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 3px;
+    padding: 3px;
 }
 
 .score h2 {
@@ -140,10 +142,11 @@ img {
 /* Style for the match area  */
 .match {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: opacity 0.5s ease 0.5s;
+
 }
 
 .winner {
@@ -159,7 +162,6 @@ img {
     align-items: center;
     margin: 5px;
     padding: 5px;
-
 }
 
 /* Rotating computer hand to be facing each other  */
