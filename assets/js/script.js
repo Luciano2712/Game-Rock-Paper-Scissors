@@ -25,9 +25,29 @@ const game = () => {
         this.style.animation = "";
       });
     });
+    //Computer Options
+    const computerOptions = ["rock", "paper", "scissors"];
 
+    options.forEach(option => {
+      option.addEventListener("click", function() {
+        //Computer Choice
+        const computerNumber = Math.floor(Math.random() * 3);
+        const computerChoice = computerOptions[computerNumber];
 
-
+        setTimeout(() => {
+          //Here is where we call compare hands
+          compareHands(this.textContent, computerChoice);
+          //Update Images
+          playerHand.src = `./assets/images${this.textContent}.png`;
+          computerHand.src = `./assets/images${computerChoice}.png`;
+        }, 2000);
+        //Animation
+        playerHand.style.animation = "shakePlayer 2s ease";
+        computerHand.style.animation = "shakeComputer 2s ease";
+      });
+    });
+  };
 }
+
 //start the game function
 game();
