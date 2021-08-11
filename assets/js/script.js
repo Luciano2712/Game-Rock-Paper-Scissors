@@ -38,8 +38,8 @@ const game = () => {
           //Here is where we call compare hands
           compareHands(this.textContent, computerChoice);
           //Update Images
-          playerHand.src = `./assets/images${this.textContent}.png`;
-          computerHand.src = `./assets/images${computerChoice}.png`;
+          playerHand.src = `./assets/images/${this.textContent}.png`;
+          computerHand.src = `./assets/images/${computerChoice}.png`;
         }, 2000);
         //Animation
         playerHand.style.animation = "shakePlayer 2s ease";
@@ -53,9 +53,59 @@ const game = () => {
     playerScore.textContent = pScore;
     computerScore.textContent = cScore;
   };
-  
+  const compareHands = (playerChoice, computerChoice) => {
+    //Update Text
+    const winner = document.querySelector(".winner");
+    //Checking for a tie
+    if (playerChoice === computerChoice) {
+      winner.textContent = "It is a tie";
+      return;
+    }
+    //Check for Rock
+    if (playerChoice === "rock") {
+      if (computerChoice === "scissors") {
+        winner.textContent = "Player Wins";
+        pScore++;
+        updateScore();
+        return;
+      } else {
+        winner.textContent = "Computer Wins";
+        cScore++;
+        updateScore();
+        return;
+      }
+    }
+    //Check for Paper
+    if (playerChoice === "paper") {
+      if (computerChoice === "scissors") {
+        winner.textContent = "Computer Wins";
+        cScore++;
+        updateScore();
+        return;
+      } else {
+        winner.textContent = "Player Wins";
+        pScore++;
+        updateScore();
+        return;
+      }
+    }
+    //Check for Scissors
+    if (playerChoice === "scissors") {
+      if (computerChoice === "rock") {
+        winner.textContent = "Computer Wins";
+        cScore++;
+        updateScore();
+        return;
+      } else {
+        winner.textContent = "Player Wins";
+        pScore++;
+        updateScore();
+        return;
+      }
+    }
+  };
 
-}
+};
 
 //start the game function
 game();
